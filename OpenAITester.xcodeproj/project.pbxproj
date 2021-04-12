@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,25 @@
 		6210503C2623ED7E00AB7BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6210503A2623ED7E00AB7BD4 /* Main.storyboard */; };
 		6210503E2623ED8000AB7BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6210503D2623ED8000AB7BD4 /* Assets.xcassets */; };
 		621050412623ED8000AB7BD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6210503F2623ED8000AB7BD4 /* LaunchScreen.storyboard */; };
+		6210504A2624010700AB7BD4 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 621050492624010700AB7BD4 /* Cartfile */; };
+		6210504E262401CF00AB7BD4 /* IQKeyboardManagerSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6210504D262401CF00AB7BD4 /* IQKeyboardManagerSwift.xcframework */; };
+		6210504F262401CF00AB7BD4 /* IQKeyboardManagerSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6210504D262401CF00AB7BD4 /* IQKeyboardManagerSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		621050522624036300AB7BD4 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621050512624036300AB7BD4 /* Secrets.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62105050262401CF00AB7BD4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6210504F262401CF00AB7BD4 /* IQKeyboardManagerSwift.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		621050312623ED7E00AB7BD4 /* OpenAITester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAITester.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +42,9 @@
 		6210503D2623ED8000AB7BD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		621050402623ED8000AB7BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		621050422623ED8000AB7BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621050492624010700AB7BD4 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		6210504D262401CF00AB7BD4 /* IQKeyboardManagerSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IQKeyboardManagerSwift.xcframework; path = Carthage/Build/IQKeyboardManagerSwift.xcframework; sourceTree = "<group>"; };
+		621050512624036300AB7BD4 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6210504E262401CF00AB7BD4 /* IQKeyboardManagerSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +64,7 @@
 			children = (
 				621050332623ED7E00AB7BD4 /* OpenAITester */,
 				621050322623ED7E00AB7BD4 /* Products */,
+				6210504C262401CF00AB7BD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +82,22 @@
 				621050342623ED7E00AB7BD4 /* AppDelegate.swift */,
 				621050362623ED7E00AB7BD4 /* SceneDelegate.swift */,
 				621050382623ED7E00AB7BD4 /* ViewController.swift */,
+				621050512624036300AB7BD4 /* Secrets.swift */,
+				621050492624010700AB7BD4 /* Cartfile */,
 				6210503A2623ED7E00AB7BD4 /* Main.storyboard */,
 				6210503D2623ED8000AB7BD4 /* Assets.xcassets */,
 				6210503F2623ED8000AB7BD4 /* LaunchScreen.storyboard */,
 				621050422623ED8000AB7BD4 /* Info.plist */,
 			);
 			path = OpenAITester;
+			sourceTree = "<group>";
+		};
+		6210504C262401CF00AB7BD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6210504D262401CF00AB7BD4 /* IQKeyboardManagerSwift.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +110,7 @@
 				6210502D2623ED7E00AB7BD4 /* Sources */,
 				6210502E2623ED7E00AB7BD4 /* Frameworks */,
 				6210502F2623ED7E00AB7BD4 /* Resources */,
+				62105050262401CF00AB7BD4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +160,7 @@
 			files = (
 				621050412623ED8000AB7BD4 /* LaunchScreen.storyboard in Resources */,
 				6210503E2623ED8000AB7BD4 /* Assets.xcassets in Resources */,
+				6210504A2624010700AB7BD4 /* Cartfile in Resources */,
 				6210503C2623ED7E00AB7BD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				621050392623ED7E00AB7BD4 /* ViewController.swift in Sources */,
+				621050522624036300AB7BD4 /* Secrets.swift in Sources */,
 				621050352623ED7E00AB7BD4 /* AppDelegate.swift in Sources */,
 				621050372623ED7E00AB7BD4 /* SceneDelegate.swift in Sources */,
 			);
